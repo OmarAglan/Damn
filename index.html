@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html
+	dir="rtl"
+	lang="ar"
+	data-bs-theme="auto">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
+		<title>الموقع</title>
+		<meta
+			name="description"
+			content="A Website" />
+
+		<meta
+			property="og:title"
+			content="" />
+		<meta
+			property="og:type"
+			content="" />
+		<meta
+			property="og:url"
+			content="" />
+		<meta
+			property="og:image"
+			content="" />
+		<meta
+			property="og:image:alt"
+			content="" />
+
+		<link
+			rel="icon"
+			href="img/favicon.ico"
+			sizes="any" />
+		<link
+			rel="icon"
+			href="img/icon.svg"
+			type="image/svg+xml" />
+		<link
+			rel="apple-touch-icon"
+			href="img/icon.png" />
+
+		<link
+			rel="manifest"
+			href="site.webmanifest" />
+		<meta
+			name="theme-color"
+			content="#fafafa" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+			rel="stylesheet" />
+		<!--Link To Css Libraries-->
+		<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+		<link
+			href="css/bootstrap/bootstrap.rtl.min.css"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css" />
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<!--Link to Custom Css-->
+		<link
+			href="css/main.css"
+			rel="stylesheet" />
+	</head>
+
+	<body>
+		<!--The Main Index Header-->
+		<nav
+			class="navbar"
+			role="navigation"
+			aria-label="main navigation">
+			<div class="navbar-brand">
+				<a
+					class="navbar-item"
+					href="index.html">
+					<img
+						src="img/logo.png"
+						alt="لوجو الشركة" />
+				</a>
+				<a
+					role="button"
+					class="navbar-burger"
+					aria-label="menu"
+					aria-expanded="false"
+					data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div
+				id="navbarBasicExample"
+				class="navbar-menu">
+				<div class="navbar-start">
+					<a class="navbar-item"> الرئيسية </a>
+
+					<a class="navbar-item"> عن الشركة </a>
+
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link"> الخدمات </a>
+
+						<div class="navbar-dropdown">
+							<a class="navbar-item"> خدمة 1 </a>
+							<a class="navbar-item"> خدمة 2 </a>
+							<a class="navbar-item"> خدمة3 </a>
+							<hr class="navbar-divider" />
+							<a class="navbar-item"> خدمة مخصصة </a>
+						</div>
+					</div>
+					<a class="navbar-item"> المركز الاعلامي </a>
+					<a class="navbar-item"> تواصل معنا</a>
+				</div>
+
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<div class="buttons">
+							<a class="button is-light">
+								<img
+									src="img/search (1).png"
+									alt="البحث" />
+							</a>
+
+							<a class="button is-primary">
+								<strong>طلب خدمة</strong>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!--The Main Index Content-->
+		<!--Carousel Header 1-->
+		<div class="hero-carousel">
+			<div class="carousel-slide">
+				<div class="carousel-text">
+					<h2>تفاصيل 1</h2>
+					<p>تفاصيل التفاصيل1</p>
+				</div>
+				<img
+					src="img/placeholder.png"
+					alt="Slide 1"
+					class="carousel-image" />
+				<img
+					src="img/placeholder.png"
+					alt="Overlay Image"
+					class="overlay-image" />
+			</div>
+			<div class="carousel-slide">
+				<div class="carousel-text">
+					<h2>تفاصيل 2</h2>
+					<p>تفاصيل التفاصيل2</p>
+				</div>
+				<img
+					src="img/placeholder.png"
+					alt="Slide 2"
+					class="carousel-image" />
+				<img
+					src="img/placeholder.png"
+					alt="Overlay Image"
+					class="overlay-image" />
+			</div>
+			<!-- Add more slides as needed -->
+		</div>
+		<!--carousel header 2-->
+		<!-- Tinyflow Swiper Slider -->
+		<section
+			class="swiper tinyflow-slider"
+			data-speed="1000"
+			data-autoplay-delay="8000">
+			<div class="container">
+				<button
+					type="button"
+					aria-label="Prev"
+					class="tinyflow-slider__arrow tinyflow-slider__arrow--prev"
+					data-slider-arrow="prev">
+					<svg
+						width="1em"
+						height="1em"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						shape-rendering="geometricPrecision"
+						viewBox="0 0 20 20">
+						<path
+							d="m14 18-8-8 8-8"
+							stroke="currentColor"
+							stroke-width="1.5"
+							vector-effect="non-scaling-stroke"></path>
+					</svg>
+				</button>
+				<button
+					type="button"
+					aria-label="Next"
+					class="tinyflow-slider__arrow tinyflow-slider__arrow--next"
+					data-slider-arrow="next">
+					<svg
+						width="1em"
+						height="1em"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						shape-rendering="geometricPrecision"
+						viewBox="0 0 20 20">
+						<path
+							d="m6 18 8-8-8-8"
+							stroke="currentColor"
+							stroke-width="1.5"
+							vector-effect="non-scaling-stroke"></path>
+					</svg>
+					<svg
+						class="tinyflow-slider__arrow__progress"
+						width="100%"
+						height="100%"
+						viewBox="0 0 40 40"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20Z"
+							pathLength="100"
+							stroke="currentColor"
+							stroke-width="2"></path>
+					</svg>
+				</button>
+			</div>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="tinyflow-slide">
+						<figure class="tinyflow-slide__background">
+							<img
+								class="tinyflow-slide__background__element"
+								src="https://images.unsplash.com/photo-1664575599618-8f6bd76fc670?q=80&w=1920&auto=format"
+								alt="Business"
+								loading="lazy"
+								draggable="false" />
+						</figure>
+						<div class="tinyflow-slide__card">
+							<div class="container">
+								<div class="tinyflow-slide__content">
+									<h1 class="tinyflow-slide__content__title">
+										1 One of AngelList’s biggest benefits is its all-in-one
+										software-first approach to admin, legal and tax services.
+									</h1>
+									<p class="tinyflow-slide__content__text">
+										Cindy Bi, GP, CapitalX
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="tinyflow-slide">
+						<figure class="tinyflow-slide__background">
+							<video
+								class="tinyflow-slide__background__element"
+								poster="https://images.unsplash.com/photo-1665686308827-eb62e4f6604d?q=80&w=1920&auto=format"
+								autoplay
+								loop
+								muted
+								playsinline>
+								<source
+									src="./assets/videos/banner.mp4"
+									type="video/mp4" />
+							</video>
+						</figure>
+						<div class="tinyflow-slide__card">
+							<div class="container">
+								<div class="tinyflow-slide__content">
+									<h1 class="tinyflow-slide__content__title">
+										2 AngelList takes the complexity and hassle out of launching
+										a new investment vehicle so we can focus on picking the
+										companies we want to invest in and supporting the founders
+									</h1>
+									<p class="tinyflow-slide__content__text">
+										Brian Nichols, GP, Hustle Fund
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="tinyflow-slide">
+						<figure class="tinyflow-slide__background">
+							<img
+								class="tinyflow-slide__background__element"
+								src="https://images.unsplash.com/photo-1665686310429-ee43624978fa?q=80&w=1920&auto=format"
+								alt="Business"
+								loading="lazy"
+								draggable="false" />
+						</figure>
+						<div class="tinyflow-slide__card">
+							<div class="container">
+								<div class="tinyflow-slide__content">
+									<h1 class="tinyflow-slide__content__title">
+										3 it was crucial to get moving quickly and AngelList enabled
+										a seamless launch.
+									</h1>
+									<p class="tinyflow-slide__content__text">
+										Nichole Wischoff, GP, Wischoff Ventures
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Footer-->
+		<div class="container">
+			<footer
+				class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+				<p class="col-md-4 mb-0 text-body-secondary">
+					&copy; 2024 Company, Inc
+				</p>
+
+				<a
+					href="/"
+					class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+					<svg
+						class="bi me-2"
+						width="40"
+						height="32">
+						<use xlink:href="#bootstrap" />
+					</svg>
+				</a>
+
+				<ul class="nav col-md-4 justify-content-end">
+					<li class="nav-item">
+						<a
+							href="#"
+							class="nav-link px-2 text-body-secondary"
+							>Home</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							href="#"
+							class="nav-link px-2 text-body-secondary"
+							>Features</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							href="#"
+							class="nav-link px-2 text-body-secondary"
+							>Pricing</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							href="#"
+							class="nav-link px-2 text-body-secondary"
+							>FAQs</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							href="#"
+							class="nav-link px-2 text-body-secondary"
+							>About</a
+						>
+					</li>
+				</ul>
+			</footer>
+		</div>
+		<!-- Js Bundles -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
