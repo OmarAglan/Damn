@@ -40,13 +40,6 @@
 		<link
 			rel="apple-touch-icon"
 			href="img/icon.png" />
-
-		<link
-			rel="manifest"
-			href="site.webmanifest" />
-		<meta
-			name="theme-color"
-			content="#fafafa" />
 		<link
 			rel="preconnect"
 			href="https://fonts.googleapis.com" />
@@ -58,10 +51,6 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
 			rel="stylesheet" />
 		<!--Link To Css Libraries-->
-		<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-		<link
-			href="css/bootstrap/bootstrap.rtl.min.css"
-			rel="stylesheet" />
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css" />
@@ -106,9 +95,9 @@
 				id="navbarBasicExample"
 				class="navbar-menu">
 				<div class="navbar-start">
-					<a class="navbar-item"> الرئيسية </a>
+					<a class="navbar-item" href="index.html"> الرئيسية </a>
 
-					<a class="navbar-item"> عن الشركة </a>
+					<a class="navbar-item" href="about.html"> عن الشركة </a>
 
 					<div class="navbar-item has-dropdown is-hoverable">
 						<a class="navbar-link"> الخدمات </a>
@@ -144,6 +133,13 @@
 		</nav>
 
 		<!--The Main Index Content-->
+		<div class="text-box">
+			<div class="text-content">
+				<h1>عنوان</h1>
+				<p>تفاصيل مبدئية</p>
+				<button class="btn-link">طلب خدمة</button>
+			</div>
+		</div>
 		<!--Carousel Header 1-->
 		<div class="hero-carousel">
 			<div class="carousel-slide">
@@ -181,7 +177,7 @@
 		<section
 			class="swiper tinyflow-slider"
 			data-speed="1000"
-			data-autoplay-delay="8000">
+			data-autoplay-delay="3000">
 			<div class="container">
 				<button
 					type="button"
@@ -241,7 +237,7 @@
 						<figure class="tinyflow-slide__background">
 							<img
 								class="tinyflow-slide__background__element"
-								src="https://images.unsplash.com/photo-1664575599618-8f6bd76fc670?q=80&w=1920&auto=format"
+								src="img/561dfe3e-e5f8-415c-9b26-fbdf94897722-cover.png"
 								alt="Business"
 								loading="lazy"
 								draggable="false" />
@@ -249,13 +245,8 @@
 						<div class="tinyflow-slide__card">
 							<div class="container">
 								<div class="tinyflow-slide__content">
-									<h1 class="tinyflow-slide__content__title">
-										1 One of AngelList’s biggest benefits is its all-in-one
-										software-first approach to admin, legal and tax services.
-									</h1>
-									<p class="tinyflow-slide__content__text">
-										Cindy Bi, GP, CapitalX
-									</p>
+									<h1 class="tinyflow-slide__content__title">خدمة 1</h1>
+									<p class="tinyflow-slide__content__text">محتوي الخدمة</p>
 								</div>
 							</div>
 						</div>
@@ -266,27 +257,21 @@
 						<figure class="tinyflow-slide__background">
 							<video
 								class="tinyflow-slide__background__element"
-								poster="https://images.unsplash.com/photo-1665686308827-eb62e4f6604d?q=80&w=1920&auto=format"
+								poster="img/561dfe3e-e5f8-415c-9b26-fbdf94897722-cover.png"
 								autoplay
 								loop
 								muted
 								playsinline>
 								<source
-									src="./assets/videos/banner.mp4"
+									src="./img/viedo.mp4"
 									type="video/mp4" />
 							</video>
 						</figure>
 						<div class="tinyflow-slide__card">
 							<div class="container">
 								<div class="tinyflow-slide__content">
-									<h1 class="tinyflow-slide__content__title">
-										2 AngelList takes the complexity and hassle out of launching
-										a new investment vehicle so we can focus on picking the
-										companies we want to invest in and supporting the founders
-									</h1>
-									<p class="tinyflow-slide__content__text">
-										Brian Nichols, GP, Hustle Fund
-									</p>
+									<h1 class="tinyflow-slide__content__title">خدمة 2</h1>
+									<p class="tinyflow-slide__content__text">وصف الخدمة2</p>
 								</div>
 							</div>
 						</div>
@@ -297,7 +282,7 @@
 						<figure class="tinyflow-slide__background">
 							<img
 								class="tinyflow-slide__background__element"
-								src="https://images.unsplash.com/photo-1665686310429-ee43624978fa?q=80&w=1920&auto=format"
+								src="img/561dfe3e-e5f8-415c-9b26-fbdf94897722-cover.png"
 								alt="Business"
 								loading="lazy"
 								draggable="false" />
@@ -305,13 +290,8 @@
 						<div class="tinyflow-slide__card">
 							<div class="container">
 								<div class="tinyflow-slide__content">
-									<h1 class="tinyflow-slide__content__title">
-										3 it was crucial to get moving quickly and AngelList enabled
-										a seamless launch.
-									</h1>
-									<p class="tinyflow-slide__content__text">
-										Nichole Wischoff, GP, Wischoff Ventures
-									</p>
+									<h1 class="tinyflow-slide__content__title">خدمة3</h1>
+									<p class="tinyflow-slide__content__text">وصف الخدمة 3</p>
 								</div>
 							</div>
 						</div>
@@ -319,67 +299,111 @@
 				</div>
 			</div>
 		</section>
+		<!-- Submit form-->
+		<section
+			class="is-align-content-center is-justify-content-center section container">
+			<div class="field">
+				<label class="label">الأسم</label>
+				<div class="control">
+					<input
+						class="input"
+						type="text"
+						placeholder="أدخل أسمك" />
+				</div>
+			</div>
+			<div class="field">
+				<label class="label">الأيميل</label>
+				<div class="control has-icons-left has-icons-right">
+					<input
+						class="input"
+						type="email"
+						placeholder="أيميلك"
+						value="" />
+					<span class="icon is-small is-left">
+						<i class="fas fa-envelope"></i>
+					</span>
+					<span class="icon is-small is-right">
+						<i class="fas fa-exclamation-triangle"></i>
+					</span>
+				</div>
+			</div>
+			<div class="field">
+				<label class="label">أختر الخدمة المطلوبة</label>
+				<div class="control">
+					<div class="select">
+						<select>
+							<option>خدمة 1</option>
+							<option>خدمة 1س</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="field">
+				<label class="label">تفاصيل الخدمة المطلوبة</label>
+				<div class="control">
+					<textarea
+						class="textarea"
+						placeholder="تفاصيلك"></textarea>
+				</div>
+			</div>
+			<div class="field is-grouped">
+				<div class="control">
+					<button class="button is-link">أرسل</button>
+				</div>
+				<div class="control">
+					<button class="button is-link is-light">أخلاء المحتوي</button>
+				</div>
+			</div>
+		</section>
 
 		<!--Footer-->
-		<div class="container">
-			<footer
-				class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-				<p class="col-md-4 mb-0 text-body-secondary">
-					&copy; 2024 Company, Inc
-				</p>
+		<footer>
+			<div class="container__footer">
+				<div class="box__footer">
+					<div class="logo">
+						<img
+							src="img/logo.png"
+							alt="" />
+					</div>
+					<div class="terms">
+						<p>تفاصيل عن الشركة</p>
+					</div>
+				</div>
+				<div class="box__footer">
+					<h2>الخدمات</h2>
+					<a href="#">خدمة 1</a>
+					<a href="#">خدمة 1</a>
+					<a href="#">خدمة 1</a>
+					<a href="#">خدمة 1</a>
+				</div>
 
-				<a
-					href="/"
-					class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-					<svg
-						class="bi me-2"
-						width="40"
-						height="32">
-						<use xlink:href="#bootstrap" />
-					</svg>
-				</a>
+				<div class="box__footer">
+					<h2>المركز الاعلامي</h2>
+					<a href="#">مشروعات</a>
+					<a href="#">خدمات</a>
+					<a href="#">مكان لخدمات اخري</a>
+					<a href="#">مكان لخدمات اخري</a>
+				</div>
 
-				<ul class="nav col-md-4 justify-content-end">
-					<li class="nav-item">
-						<a
-							href="#"
-							class="nav-link px-2 text-body-secondary"
-							>Home</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							href="#"
-							class="nav-link px-2 text-body-secondary"
-							>Features</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							href="#"
-							class="nav-link px-2 text-body-secondary"
-							>Pricing</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							href="#"
-							class="nav-link px-2 text-body-secondary"
-							>FAQs</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							href="#"
-							class="nav-link px-2 text-body-secondary"
-							>About</a
-						>
-					</li>
-				</ul>
-			</footer>
-		</div>
+				<div class="box__footer">
+					<h2>عن الشركة</h2>
+					<a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+					<a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+					<a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+					<a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+					<a href="#"><i class="fab fa-instagram-square"></i> تواصل معنا</a>
+				</div>
+			</div>
+
+			<div class="box__copyright">
+				<hr />
+				<p>جميع الحقوق محفوظة © 2024 <b>Omar</b></p>
+			</div>
+		</footer>
+
 		<!-- Js Bundles -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="js/main.js"></script>
+		<script></script>
 	</body>
 </html>
